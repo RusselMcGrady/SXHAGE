@@ -1,23 +1,19 @@
-# This is the repo. for the conference paper of IEEE CASE 2023: Multi-criteria attributed graph embedding-enabled decision support system for resilient manufacturing (accepted)
+# This is the repo. for the conference paper of JMS: Self-X Heterogeneous Attributed Graph Embedding-based Configuration Framework for Cognitive Mass Personalization  
 
-# How to code an AGE model considering multi-criteria and multi-structure on heterogeneous KG in PyTorch
+# How to code an SXHAGE model in PyTorch
 ## PyTorch implementation of the code for multi-criteria attributed graph embedding. The self-attention-based consistent layer is implemented.
 
 This is the repo of the MCAGE model for link prediction on heterogeneous KG
 
-The train.py file shows how to use the model conduct link prediction on the data from the .csv file in "/data".
+The train_SXHGAT.py file shows the graph clustering task on the data from the .csv file in "/data".
 
-The test.py file contains the eval function. 
+The train_SXHGAT_LP.py file contains the link prediction task. 
 
 
-## Notice: you must revise the 241 line of the RandomLinkSplit to declare if the graph is directed or undirected
+## Notice: you must revise the 241th line of the RandomLinkSplit to declare if the graph is directed or undirected
 
 ## install the required package in requirements.txt
 pip install -r requirements.txt
 
 ## train
-python train.py
-
-## test
-python test.py
-
+python train_SXHGAT.py
